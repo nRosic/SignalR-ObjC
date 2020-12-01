@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |sp|
     sp.source_files = 'Framework/*.{h}', 'SignalR.Client/**/*.{h,m}'
-    sp.dependency 'AFNetworking', :git => 'https://github.com/nRosic/AFNetworking.git', :branch => 'import-UIWebView-removed'
+    sp.dependency 'AFNetworking', '~>2.6.6'
     sp.dependency 'SocketRocket', '~>0.4'
   end
 
